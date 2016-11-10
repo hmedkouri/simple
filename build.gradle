@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+    id 'nebula.release' version '4.1.0'
+}
+
+sourceCompatibility = '1.8'
+
+group = 'com.acuo.experimental'
+
+repositories {
+   maven {
+     url "${nexusUrl}/repository/maven-public/"
+   }
+}
