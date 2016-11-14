@@ -16,3 +16,11 @@ repositories {
      url "${nexusUrl}/repository/maven-public/"
    }
 }
+
+publishing {
+    repositories {
+        maven {
+            url "${nexusUrl}/repository/maven-releases"
+        }
+    }
+}
